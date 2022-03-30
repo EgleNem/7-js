@@ -9,6 +9,8 @@ Palyginimo operatoriai:
 -visi: <, >, <=, >=, ==, !=, === , !== (griezta lygybe)
 -nadotini: < , >, <=, >=, === , !==
 -NEnaudotini: ==, != - del saugumo
+=== griezta lygybe - tikrina tipa
+== tikrina reiksme
 
 
 */
