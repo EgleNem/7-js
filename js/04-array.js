@@ -33,13 +33,8 @@ console.log('Paskutinis:', pazymiai[paskutinioPozicija]);
 
 const studentai = ['Petras', 'Maryte', 'Jonas', 'Ona', 'Gertruda', 'Aloyzas'];
 console.log(studentai);
+console.log('----------');
 
-let index = 0;
+let index = 3 ;
 console.log(`Cia yra: ${studentai[index++]}.`);
-console.log(`Cia yra: ${studentai[index++]}.`);
-console.log(`Cia yra: ${studentai[index++]}.`);
-console.log(`Cia yra: ${studentai[index++]}.`);
-console.log(`Cia yra: ${studentai[index++]}.`);
-console.log(`Cia yra: ${studentai[index++]}.`);
-
 
