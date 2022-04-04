@@ -1,51 +1,40 @@
 const pirmas = 7;
 const antras = 5;
 
-//iprasta funkcija
+// iprasta funkcija
 function suma(a, b) {
-  return a + b;
+    return a + b;
 }
-
 const r1 = suma(pirmas, antras);
 console.log(r1);
 
-//kintamajam priskirta anonimine funkcija
-
-function atimtis(a, b) {
-  return a - b;
+// kintamajam priskirta anonimine funkcija
+const atimtis = function (a, b) {
+    return a - b;
 }
 const r2 = atimtis(pirmas, antras);
 console.log(r2);
 
-//function dalyba (a,b) {
-/*   return a / b;
-    }
-    const r3 = dalyba(pirmas,antras)
-   console.log(r3); */
+// arrow (rodykline) funkcija
+const dalyba = (a, b) => {
+    return a / b;
+}
+const r3 = dalyba(pirmas, antras);
+console.log(r3);
 
-//arrow funkcija
-
-// jei logikos bloke {} yra tik viena procedura, tai galime nerasyti {} ir return
-//const daugyba = (a,b) => a*b;
-
-const daugyba = (a, b) => {
-  return a * b;
-};
+// arrow (rodykline) funkcija
+// jei logikos bloke {} yra tik 1 procedura, tai galime nerasyti {} ir return
+const daugyba = (a, b) => a * b;
 const r4 = daugyba(pirmas, antras);
 console.log(r4);
 
-//jei parametru bloke yra tik 1 parametras, tai galime nerasyti ()
-const kvadratu = (a) => a * a;
+// arrow (rodykline) funkcija
+// jei parametru bloke () yra tik 1 parametras, tai galime nerasyti ()
+const kvadratu = a => a * a;
 const r5 = kvadratu(pirmas);
 console.log(r5);
 
+
 const tekstas = 'Labas rytas';
-
-/*function pirmaRaide(text) {
-    return text [0];
-}
-console.log(pirmaRaide(tekstas));
-*/
-
 const pirmaRaide = s => s[0];
 console.log(pirmaRaide(tekstas));
